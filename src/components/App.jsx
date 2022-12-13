@@ -21,6 +21,8 @@ export default function App() {
       case 'neutral':
         setNeutral(prevState => prevState + 1);
         break;
+      default:
+        return;
     }
   };
   const countTotalFeedback = () => {
